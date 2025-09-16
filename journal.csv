@@ -1,0 +1,28 @@
+Date,Entry,Emotion,Score
+2025-04-19 01:00:36,"my brother got 68k rank in jee main 2025 he was good at it but somehow on exam day he messed up and......
+i want him to do great in wbjee and jee advanced",anger,0.5
+2025-04-19 01:01:24,"my brother got 68k rank in jee main 2025 he was good at it but somehow on exam day he messed up and......
+i want him to do great in wbjee and jee advanced
+i am not angry, i am hoping best for his future",anger,1.0
+2025-04-19 01:07:48, i am hungry,anger,0.95
+2025-04-19 01:07:59, i am happy,joy,1.0
+2025-04-19 01:08:12," i am sad
+",sadness,1.0
+2025-04-19 01:08:29," i am feeling weak
+
+",sadness,1.0
+2025-04-19 01:09:11," i am going to have my endsem in one week i am little nervous about it
+
+",fear,1.0
+2025-07-16 12:18:49,i am feeling good,joy,0.99
+2025-07-16 12:19:25,bad,disgust,0.57
+2025-07-16 12:19:33,not bad,disgust,0.49
+2025-07-16 12:19:46,i am not happy,sadness,0.98
+2025-09-17 00:14:35,today was my exam ,fear,0.88
+2025-09-17 00:15:11,today was my exam ,fear,0.88
+2025-09-17 00:16:24,"i have my placement season coming up, bit nervous, but confident on my preparation.",fear,0.99
+2025-09-17 00:16:59,Yesterday was my brother's birthday.,joy,0.74
+2025-09-17 00:35:54,happy,joy,0.85
+2025-09-17 03:13:43,good happy,joy,0.91
+2025-09-17 03:24:59,"good night
+",neutral,0.72
