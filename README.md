@@ -45,4 +45,4 @@ A: Yes. Suggestions are generated based on recent dominant emotions.
 
 
 ## Author  
-**@Somrima Saha**  
+- [@SomrimaSaha](https://github.com/somrima-09) 
