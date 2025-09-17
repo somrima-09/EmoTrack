@@ -1,13 +1,13 @@
 # EmoTrack  
 A journaling and emotion-tracking web application that helps users monitor their emotional well-being over time.  
 
----
+
 
 ## Demo  
 - [Demo Link](https://drive.google.com/file/d/1eOtbNht_bxOFS29ck9KLOvYrM4gTPxsC/view?usp=sharing)  
 
 
----
+
 
 ## Features  
 - Daily journaling: Log journal entries to track thoughts and emotions.  
@@ -15,9 +15,8 @@ A journaling and emotion-tracking web application that helps users monitor their
 - Mood trends: Visualizes emotional patterns over time with interactive charts.  
 - Personalized suggestions: Provides well-being tips based on recent dominant emotions.  
 - Data export: Download the journal history as CSV for offline use.  
-- Custom themes: Light/Dark mode support for better user experience.  
 
----
+
 
 ## Tech Stack  
 - **Frontend/UI**: Streamlit (Python)  
@@ -26,13 +25,12 @@ A journaling and emotion-tracking web application that helps users monitor their
 - **Visualization**: Matplotlib, Streamlit charts  
 - **ML Model**: DistilRoBERTa (fine-tuned for emotion classification)  
 
----
 
 ## Used By  
 - Students exploring mental health and AI applications  
 - Individuals interested in tracking and improving emotional well-being  
 
----
+
 
 ## FAQ  
 **Q: How do I log my emotions?**  
@@ -44,7 +42,7 @@ A: Yes. Weekly and monthly emotion trends are visualized with charts.
 **Q: Are the suggestions personalized?**  
 A: Yes. Suggestions are generated based on recent dominant emotions.  
 
----
+
 
 ## Author  
-- **Somrima Saha**  
+**@Somrima Saha**  
