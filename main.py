@@ -10,7 +10,7 @@ from visualization import plot_mood_bar, plot_mood_pie
 
 journal_df=load_journal()
 
-st.title(" MindScope - Mental Well-being Journal")
+st.title("EmoTrack")
 st.subheader("How are you feeling today?")
 
 entry = st.text_area("Write your thoughts...", height=200)
@@ -60,6 +60,24 @@ fig = px.scatter(
 fig.update_yaxes(showticklabels=False, title='')
 st.plotly_chart(fig, use_container_width=True)
 
+#Suggestions
+st.subheader("💡 Well-being Suggestion")
+recent_df = journal_df.tail(7)   # last 7 entries
+if not recent_df.empty:
+    dominant_emotion = recent_df["Emotion"].mode()[0]
+dominant_emotion = dominant_emotion.capitalize()
+emotion_suggestions = {
+    "Joy": "Keep up the good vibes! Maybe share your happiness with a friend 😊",
+    "Sadness": "Take a short walk or write down 3 things you're grateful for 🌱",
+    "Anger": "Try some deep breathing exercises or listen to calming music 🎶",
+    "Fear": "Talk to someone you trust or try journaling about your worries ✍️",
+    "Disgust": "Do something uplifting—watch a comedy or spend time outdoors 🌸",
+    "Neutral": "Use this calm moment to plan your goals or do something creative 🌞"
+}
+
+suggestion = emotion_suggestions.get(dominant_emotion, "Take care of yourself today 💙")
+st.info(f"Suggestion: {suggestion}")
+
 # CSV Export
 st.markdown("### 📥 Export Your Journal")
 if not journal_df.empty:
@@ -68,69 +86,3 @@ if not journal_df.empty:
 else:
     st.info("Add entries to enable download.")
 
-
-theme = st.sidebar.radio("Choose Theme", ["Light", "Dark"])
-def set_theme(mode):
-    if mode == "Dark":
-        st.markdown(
-            """
-            <style>
-                body {
-                    background-color: #0e1117;
-                    color: white;
-                }
-                .stButton>button {
-                    background-color: #1DB954;
-                    color: white;
-                }
-                .stTextArea textarea {
-                    background-color: #262730;
-                    color: white;
-                }
-                .stDataFrame {
-                    background-color: #262730;
-                    color: white;
-                }
-                .stMarkdown {
-                    color: white;
-                }
-                .css-1v3fvcr {
-                    background-color: #0e1117;
-                    color: white;
-                }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
-    else:
-        st.markdown(
-            """
-            <style>
-                body {
-                    background-color: #ffffff;
-                    color: black;
-                }
-                .stButton>button {
-                    background-color: #1DB954;
-                    color: white;
-                }
-                .stTextArea textarea {
-                    background-color: #f0f0f5;
-                    color: black;
-                }
-                .stDataFrame {
-                    background-color: #f0f0f5;
-                    color: black;
-                }
-                .stMarkdown {
-                    color: black;
-                }
-                .css-1v3fvcr {
-                    background-color: #ffffff;
-                    color: black;
-                }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
-set_theme(theme)
